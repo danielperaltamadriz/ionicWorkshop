@@ -1,0 +1,17 @@
+<ion-view>
+    <ion-nav-bar class="bar bar-header bar-assertive">
+        <ion-nav-title>
+            <h1 class="title">My Activities</h1>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="list card" ng-repeat="reserve in vm.getReserves()">
+            <div class="item item-avatar" >
+                <img src="../../img/img_avatar.jpg"/>
+                <h2>{{reserve.name}}</h2>
+                <p>{{reserve.date}}</p>
+                <p>{{reserve.reason}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
